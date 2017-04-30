@@ -10,9 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var toggle = true
+    
+    @IBOutlet weak var theLabel: UILabel!
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        if toggle {
+            theLabel.text = "You pushed me!"
+        } else {
+            theLabel.text = "Push me"
+        }
+        toggle = !toggle
+        print("button tapped")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.red
     }
 
     override func didReceiveMemoryWarning() {
