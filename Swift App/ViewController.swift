@@ -3,14 +3,14 @@
 //  Swift App
 //
 //  Created by Enrique V. Kortright on 4/29/17.
-//  Copyright © 2017 Enrique V. Kortright. All rights reserved.
+//  Copyright © 2017 Enrique V. Kortright. All rights reserved..
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    var toggle = true
+    var toggle = false
     
     @IBOutlet weak var theLabel: UILabel!
     
