@@ -14,14 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: Any) {
-        if toggle {
-            theLabel.text = "You pushed me!"
-        } else {
-            theLabel.text = "Push me"
-        }
-        toggle = !toggle
         print("button tapped")
+        print(text1)
+        print(text1.text!)
+        print(text2.text!)
+        theLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
     }
     
     override func viewDidLoad() {
